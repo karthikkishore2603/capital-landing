@@ -131,7 +131,7 @@ const HeroWithNavbar = () => {
   return (
     <div className="relative h-screen w-full overflow-hidden">
       {/* Navbar - Only visible in hero section */}
-      <nav
+{/*       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
             ? "bg-black/80 backdrop-blur-sm py-3"
@@ -139,7 +139,7 @@ const HeroWithNavbar = () => {
         } px-6 md:px-10 lg:px-16`}
       >
         <div className="container mx-auto flex items-center justify-between">
-          {/* Logo */}
+         
           <div className="flex items-center">
             <Link href="/" scroll={false}>
               <Image
@@ -152,7 +152,6 @@ const HeroWithNavbar = () => {
             </Link>
           </div>
 
-          {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
@@ -162,7 +161,6 @@ const HeroWithNavbar = () => {
               HOME
             </Link>
 
-            {/* Expertise Dropdown */}
             <div className="relative">
               <button
                 className="expertise-button text-white hover:text-gray-300 transition-colors flex items-center"
@@ -249,7 +247,6 @@ const HeroWithNavbar = () => {
               )}
             </div>
 
-            {/* Sectors Dropdown */}
             <div className="relative">
               <button
                 className="sectors-button text-white hover:text-gray-300 transition-colors flex items-center"
@@ -364,7 +361,6 @@ const HeroWithNavbar = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Button - Only visible on mobile */}
           <button
             className="md:hidden text-white focus:outline-none"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -389,7 +385,6 @@ const HeroWithNavbar = () => {
             </svg>
           </button>
 
-          {/* Contact Button */}
           <div className="hidden md:flex items-center">
             <Link
               href="/contact"
@@ -402,7 +397,6 @@ const HeroWithNavbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu - Only visible when open */}
       <div
         className={`mobile-menu-wrapper fixed inset-0 z-40 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
           mobileMenuOpen
@@ -445,7 +439,6 @@ const HeroWithNavbar = () => {
               HOME
             </Link>
 
-            {/* Mobile Expertise Dropdown */}
             <div className="py-2">
               <button
                 className="text-white hover:text-gray-300 transition-colors flex items-center justify-between w-full font-medium"
@@ -530,7 +523,7 @@ const HeroWithNavbar = () => {
               )}
             </div>
 
-            {/* Mobile Sectors Dropdown */}
+           
             <div className="py-2">
               <button
                 className="text-white hover:text-gray-300 transition-colors flex items-center justify-between w-full font-medium"
@@ -651,7 +644,7 @@ const HeroWithNavbar = () => {
           </div>
         </div>
       </div>
-
+ */}
       {/* Hero Section */}
       <div className="h-screen w-full flex items-center justify-center">
         <div className="container mx-auto h-full flex flex-col md:flex-col lg:flex-row lg:gap-5 items-center relative overflow-hidden">
