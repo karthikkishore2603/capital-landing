@@ -136,7 +136,7 @@ function HorizontalScroll() {
           poster="/MEP.jpeg"
         >
           <source src="/timelapse.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          Your browser does not support the video.
         </video>
         <div className="absolute inset-0 bg-black/50 z-10"></div>
       </div>
