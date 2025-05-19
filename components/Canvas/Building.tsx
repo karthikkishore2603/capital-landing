@@ -210,9 +210,9 @@ const ScrollContent = () => {
             className="font-bold text-[3rem] md:text-[5rem] lg:text-[8rem] text-white"
             style={{ textShadow: "0px 0px 2px #000000" }}
           >
-            7K+
+            20+
             <p className="text-3xl lg:text-5xl font-light md:-mt-3 lg:-mt-10">
-              Visits
+              Years of Experience
             </p>
           </div>
         </Section>
@@ -221,20 +221,31 @@ const ScrollContent = () => {
             className="font-bold text-[3rem] md:text-[5rem] lg:text-[8rem] text-white"
             style={{ textShadow: "0px 0px 2px #000000" }}
           >
-            17+
-            <p className="text-3xl lg:text-5xl font-light md:-mt-3 lg:-mt-10">
-              Years
-            </p>
-          </div>
-        </Section>
-        <Section>
-          <div
-            className="font-bold text-[3rem] md:text-[5rem] lg:text-[8rem] text-white"
-            style={{ textShadow: "0px 0px 2px #000000" }}
-          >
-            7.2K+
+          7200+
             <p className="text-3xl lg:text-5xl font-light md:-mt-3 lg:-mt-10">
               Projects
+            </p>
+          </div>
+        </Section>
+        <Section>
+          <div
+            className="font-bold text-[3rem] md:text-[5rem] lg:text-[8rem] text-white"
+            style={{ textShadow: "0px 0px 2px #000000" }}
+          >
+            500+
+            <p className="text-3xl lg:text-5xl font-light md:-mt-3 lg:-mt-10">
+             Expert Engineers
+            </p>
+          </div>
+        </Section>
+        <Section>
+          <div
+            className="font-bold text-[3rem] md:text-[5rem] lg:text-[8rem] text-white"
+            style={{ textShadow: "0px 0px 2px #000000" }}
+          >
+            10+
+            <p className="text-3xl lg:text-5xl font-light md:-mt-3 lg:-mt-10">
+             Industries
             </p>
           </div>
         </Section>

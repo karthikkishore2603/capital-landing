@@ -43,6 +43,57 @@ export default function Carousel() {
         "Interior fit-out of TESORO CASA's Galleria unit by Capital Engineering Consultancy, blending luxury design with brand standards.",
       image: "/projects/Tesoro Casa - Commercial.jpg",
     },
+    {
+      id: 4,
+      name: "MNR Super Speciality Hospital",
+      Category: "Healthcare",
+      description: "Comprehensive MEP and interior works for MNR Super Speciality Hospital, delivering advanced medical infrastructure tailored for modern healthcare needs.",
+      image: "/projects/healthcare-project.jpeg"
+    },
+    {
+      id: 5,
+      name: "Pace British School",
+      Category: "Education",
+      description: "Full-scale development of educational facilities at Pace British School, designed to support innovative learning in a modern environment.",
+      image: "/projects/education-project.jpeg"
+    },
+    {
+      id: 6,
+      name: "Polycab",
+      Category: "Industrial",
+      description: "Turnkey MEP and civil execution for Polycab's industrial facility, ensuring efficient operations and compliance with international standards.",
+      image: "/projects/industrial-project.jpg"
+    },
+    {
+      id: 7,
+      name: "Industrial Zone 2",
+      Category: "Road & Infrastructure",
+      description: "Infrastructure development in Industrial Zone 2, including roads, utilities, and services supporting heavy industrial activities.",
+      image: "/projects/roads-infrastructure-project.jpeg"
+    },
+    {
+      id: 8,
+      name: "Etihad Rail Freight Facilities",
+      Category: "Railways",
+      description: "Design and execution of freight handling facilities for Etihad Rail, enhancing logistic capabilities and network efficiency across the region.",
+      image: "/projects/railway-project.png"
+    },
+    {
+      id: 9,
+      name: "Al Ajda STP",
+      Category: "WTP",
+      description: "Construction and commissioning of the Al Ajda Sewage Treatment Plant, focusing on sustainable wastewater management and environmental protection.",
+      image: "/projects/WTP-project.jpg"
+    },
+    {
+      id: 10,
+      name: "Dubai Hills Swgrex Villa",
+      Category: "Residential & Villa",
+      description: "Premium interior and MEP fit-out for the Swgrex Villa in Dubai Hills, reflecting modern elegance and high-end residential living standards.",
+      image: "/projects/residential-project.webp"
+    }
+    
+    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
