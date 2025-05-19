@@ -193,8 +193,8 @@ const About = () => {
               className="text-gray-600 mb-8 leading-relaxed"
             >
               Since 2006, Capital Engineering Consultancy has been at the
-              forefront of engineering innovation across the UAE, Oman, India,
-              KSA, and the UK. We specialize in delivering cutting-edge
+              forefront of engineering innovation across the UAE, Oman, India and
+              KSA. We specialize in delivering cutting-edge
               solutions in Engineering Consultancy, Residential & Commercial
               Design, Industrial Developments, and Infrastructure projects.
               <br />
