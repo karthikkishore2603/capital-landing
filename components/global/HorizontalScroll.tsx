@@ -122,7 +122,7 @@ function HorizontalScroll() {
   return (
     <section
       ref={sectionRef}
-      className="relative  overflow-hidden container mx-auto w-full mt-10"
+      className="relative overflow-hidden w-full mt-10"
       style={{ height: "100vh" }}
     >
       <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
@@ -143,14 +143,14 @@ function HorizontalScroll() {
 
       <div
         ref={wrapperRef}
-        className="absolute top-1/2 left-0 flex gap-8 pl-10 lg:pl-28 -translate-y-1/2 z-20"
-        style={{ paddingRight: "calc(50vw)" }} // Add extra padding at the end
+        className="absolute top-1/2 left-0 flex gap-4 sm:gap-6 md:gap-8 px-4 sm:px-6 md:px-10 lg:px-28 -translate-y-1/2 z-20"
+        style={{ paddingRight: "calc(30vw)" }} // Adjusted padding
       >
-        <div className="flex-shrink-0 w-[300px] md:w-[600px] text-white flex flex-col justify-center items-start">
-          <h2 className="text-2xl lg:text-5xl font-bold mb-6">
+        <div className="flex-shrink-0 w-[250px] sm:w-[300px] md:w-[450px] lg:w-[600px] text-white flex flex-col justify-center items-start">
+          <h2 className="text-xl sm:text-2xl lg:text-5xl font-bold mb-3 sm:mb-6">
             The Capital Engineering Advantage
           </h2>
-          <p className="mb-8 text-base">
+          <p className="mb-4 sm:mb-8 text-sm sm:text-base">
             As a leading engineering and construction consultancy, we take pride
             in our commitment to excellence, innovation, and precision. Our
             expert team delivers cutting-edge solutions, ensuring superior
@@ -166,9 +166,9 @@ function HorizontalScroll() {
         {cards.map((card, idx) => (
           <div
             key={card.id}
-            className="flex-shrink-0 w-[300px] md:w-[400px] bg-white rounded-xl overflow-hidden shadow-lg"
+            className="flex-shrink-0 w-[220px] sm:w-[280px] md:w-[350px] lg:w-[400px] bg-white rounded-xl overflow-hidden shadow-lg"
           >
-            <div className="relative h-48">
+            <div className="relative h-36 sm:h-48">
               <Image
                 src={card.image}
                 alt={card.title}
@@ -176,9 +176,13 @@ function HorizontalScroll() {
                 className="object-cover"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-3">{card.title}</h3>
-              <p className="text-gray-600">{card.content}</p>
+            <div className="p-4 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">
+                {card.title}
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
+                {card.content}
+              </p>
             </div>
           </div>
         ))}

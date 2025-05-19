@@ -131,7 +131,7 @@ const HeroWithNavbar = () => {
   return (
     <div className="relative h-screen w-full overflow-hidden">
       {/* Navbar - Only visible in hero section */}
-{/*       <nav
+      <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
             ? "bg-black/80 backdrop-blur-sm py-3"
@@ -139,8 +139,8 @@ const HeroWithNavbar = () => {
         } px-6 md:px-10 lg:px-16`}
       >
         <div className="container mx-auto flex items-center justify-between">
-         
-          <div className="flex items-center">
+          {/* Logo */}
+          {/* <div className="flex items-center">
             <Link href="/" scroll={false}>
               <Image
                 src="/new-logo.png"
@@ -150,18 +150,20 @@ const HeroWithNavbar = () => {
                 className="h-10 w-auto"
               />
             </Link>
-          </div>
+          </div> */}
 
+          {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link
+            {/* <Link
               href="/"
               scroll={false}
               className="text-white hover:text-gray-300 transition-colors"
             >
               HOME
-            </Link>
+            </Link> */}
 
-            <div className="relative">
+            {/* Expertise Dropdown */}
+            {/* <div className="relative">
               <button
                 className="expertise-button text-white hover:text-gray-300 transition-colors flex items-center"
                 onClick={(e) => {
@@ -245,9 +247,10 @@ const HeroWithNavbar = () => {
                   </Link>
                 </div>
               )}
-            </div>
+            </div> */}
 
-            <div className="relative">
+            {/* Sectors Dropdown */}
+            {/* <div className="relative">
               <button
                 className="sectors-button text-white hover:text-gray-300 transition-colors flex items-center"
                 onClick={(e) => {
@@ -343,25 +346,26 @@ const HeroWithNavbar = () => {
                   </Link>
                 </div>
               )}
-            </div>
+            </div> */}
 
-            <Link
+            {/* <Link
               href="/newsroom"
               scroll={false}
               className="text-white hover:text-gray-300 transition-colors"
             >
               NEWSROOM
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               href="/careers"
               scroll={false}
               className="text-white hover:text-gray-300 transition-colors"
             >
               CAREERS
-            </Link>
+            </Link> */}
           </div>
 
-          <button
+          {/* Mobile Menu Button - Only visible on mobile */}
+          {/* <button
             className="md:hidden text-white focus:outline-none"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
@@ -383,20 +387,22 @@ const HeroWithNavbar = () => {
                 }
               />
             </svg>
-          </button>
+          </button> */}
 
+          {/* Contact Button */}
           <div className="hidden md:flex items-center">
-            <Link
+            {/* <Link
               href="/contact"
               scroll={false}
               className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors font-medium"
             >
               GET IN TOUCH
-            </Link>
+            </Link> */}
           </div>
         </div>
       </nav>
 
+      {/* Mobile Menu - Only visible when open */}
       <div
         className={`mobile-menu-wrapper fixed inset-0 z-40 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
           mobileMenuOpen
@@ -439,6 +445,7 @@ const HeroWithNavbar = () => {
               HOME
             </Link>
 
+            {/* Mobile Expertise Dropdown */}
             <div className="py-2">
               <button
                 className="text-white hover:text-gray-300 transition-colors flex items-center justify-between w-full font-medium"
@@ -523,7 +530,7 @@ const HeroWithNavbar = () => {
               )}
             </div>
 
-           
+            {/* Mobile Sectors Dropdown */}
             <div className="py-2">
               <button
                 className="text-white hover:text-gray-300 transition-colors flex items-center justify-between w-full font-medium"
@@ -644,10 +651,10 @@ const HeroWithNavbar = () => {
           </div>
         </div>
       </div>
- */}
+
       {/* Hero Section */}
-      <div className="h-screen w-full flex items-center justify-center">
-        <div className="container mx-auto h-full flex flex-col md:flex-col lg:flex-row lg:gap-5 items-center relative overflow-hidden">
+      <div className="h-screen w-screen flex items-center justify-center">
+        <div className="w-full h-full flex flex-col md:flex-col lg:flex-row lg:gap-5 items-center relative overflow-hidden">
           {/* Background Video Layer */}
           <video
             ref={videoRef}
@@ -665,17 +672,17 @@ const HeroWithNavbar = () => {
           <div ref={bgLayerRef} className="absolute inset-0 bg-black/50 z-20" />
 
           {/* Text Content Layer - Static */}
-          <div className="flex flex-col gap-3 md:gap-6 lg:gap-8 p-5 md:p-8 lg:p-5 relative z-40 w-full lg:w-1/2 mt-28 md:mt-32 lg:mt-10">
+          <div className="container mx-auto flex flex-col gap-3 md:gap-6 lg:gap-8 p-5 md:p-8 lg:p-16 relative z-40 w-full mt-28 md:mt-32 lg:mt-10">
             <p
               ref={titleRef}
-              className="text-5xl md:text-5xl lg:text-6xl font-[500] w-11/12 md:w-11/12 lg:w-full text-white 
+              className="text-5xl md:text-5xl lg:text-6xl font-[500] w-full md:w-11/12 lg:w-2/4 text-white 
               drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]"
             >
               Your Premier Partner in Engineering & Construction
             </p>
             <p
               ref={descRef}
-              className="text-base md:text-lg lg:text-2xl font-[400] w-full md:w-4/5 lg:w-full text-white 
+              className="text-base md:text-lg lg:text-2xl font-[400] w-full md:w-4/5 lg:w-3/5 text-white 
               drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)]"
             >
               Capital Engineering Consultancy provides innovative design and

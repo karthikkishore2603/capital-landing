@@ -161,26 +161,27 @@ export default function Carousel() {
 
   return (
     <div
-      className="w-full max-w-[88rem] mx-auto px-4 md:px-8 py-0 md:py-8 mt-8 
+      className="w-screen max-w-full mx-auto px-4 md:px-8 py-0 md:py-8 mt-8 
       relative 
       overflow-hidden"
     >
       {/* Dot Pattern Background */}
-      <div className="absolute inset-0 pointer-events-none z-0">
+      <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
         <DotPattern
           className={cn(
+            "w-full h-full",
             "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
           )}
         />
       </div>
 
       {/* Main content */}
-      <div className="relative z-10">
-        <div className="flex flex-col md:flex-row md:justify-between mb-4 lg:mb-8">
-          <h1 className="text-4xl w-80 lg:w-1/3 lg:text-5xl font-bold text-gray-800">
+      <div className="relative z-10 w-full">
+        <div className="flex flex-col md:flex-row md:justify-between mb-4 lg:mb-8 w-full">
+          <h1 className="text-4xl w-full md:w-80 lg:w-1/3 lg:text-5xl font-bold text-gray-800">
             Our Projects
           </h1>
-          <p className="text-gray-600 text-lg lg:text-justify w-80 lg:w-96 md:text-xl lg:px-3">
+          <p className="text-gray-600 text-lg lg:text-justify w-full md:w-80 lg:w-96 md:text-xl lg:px-3">
             Delivering innovative, precise, and high-quality projects that meet
             global engineering and construction standards.
           </p>

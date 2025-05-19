@@ -196,7 +196,7 @@ const Sixth = () => {
   return (
     <div
       ref={sectionRef}
-      className="container mx-auto px-5 py-20 lg:py-32 relative overflow-hidden 
+      className="w-screen mx-auto px-5 py-20 lg:py-32 relative overflow-hidden 
       bg-gradient-to-br from-gray-50 to-gray-100 
       before:absolute before:inset-0 
       before:bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,0.05)_50%,transparent_75%)] 
@@ -243,22 +243,22 @@ const Sixth = () => {
         ></div>
       </div>
 
-      <div className="relative z-10">
+      <div className="relative z-10 max-w-[1440px] mx-auto">
         <h1
           ref={titleRef}
-          className="text-5xl lg:text-7xl font-medium text-center mb-6 tracking-tight text-gray-900"
+          className="text-4xl sm:text-5xl lg:text-7xl font-medium text-center mb-4 sm:mb-6 tracking-tight text-gray-900"
         >
           Our <span className="text-[#211574]">Expertise</span>
         </h1>
         <p
           ref={subtitleRef}
-          className="text-xl lg:text-2xl font-light text-center mb-16 lg:mb-28 max-w-4xl mx-auto text-gray-600 leading-relaxed"
+          className="text-lg sm:text-xl lg:text-2xl font-light text-center mb-10 sm:mb-16 lg:mb-28 max-w-4xl mx-auto text-gray-600 leading-relaxed px-2"
         >
           We are experts in creating efficient, quality building systems and
           infrastructure without compromising aesthetic design.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 items-start lg:px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 items-start px-2 sm:px-4">
           {features.map((feature, index) => (
             <div
               key={index}
