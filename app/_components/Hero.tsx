@@ -73,12 +73,13 @@ const HeroWithNavbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 50);
+      // Remove or modify this part to prevent the navbar background change
+      // const scrollPosition = window.scrollY;
+      // setIsScrolled(scrollPosition > 50);
 
-      // Hide navbar when scrolled beyond hero section
+      // Keep only the part that controls navbar visibility if needed
       const heroHeight = window.innerHeight;
-      setIsNavbarVisible(scrollPosition < heroHeight);
+      setIsNavbarVisible(window.scrollY < heroHeight);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -132,11 +133,9 @@ const HeroWithNavbar = () => {
     <div className="relative h-screen w-full overflow-hidden">
       {/* Navbar - Only visible in hero section */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-black/80 backdrop-blur-sm py-3"
-            : "bg-transparent py-5"
-        } px-6 md:px-10 lg:px-16`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 
+        ${isNavbarVisible ? "opacity-100" : "opacity-0 pointer-events-none"}
+        bg-transparent py-5 px-6 md:px-10 lg:px-16`}
       >
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
